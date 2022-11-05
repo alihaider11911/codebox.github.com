@@ -1,0 +1,185 @@
+<?php
+if(isset($_POST['contact_btn'])){
+   $name=$_POST['user_name'];
+   $lastname=$_POST['user_lastname'];
+   $country=$_POST['user_country'];
+   $plan=$_POST['contact_plan'];
+   $msg=$_POST['contact_msg'];
+   $to="mrajput11911@gmail.com";
+   $header="from:$email";
+
+  if ( mail($to,$subject,$msg,$header)){
+	$msg="message submitted successfully";
+  }
+
+
+}?>
+
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>PORTFOLIO BY ALI HAIDER</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+				<h1><a href="index.html" id="logo">ALI HAIDER</a></h1>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+							
+						</li>
+						<!-- <li><a href="left-sidebar.html">SERVICES</a></li>
+						<li><a href="right-sidebar.html">PRICING</a></li> -->
+						<!-- <li><a href="contact.html">CONTACT US</a></li> -->
+					</ul>
+				</nav>
+
+		</div>
+	</header>
+
+	<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<div class="container" >
+  <form action="/action_page.php" method="post">
+   <body>
+	
+
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname " placeholder="Your name.."required>
+	<strong>
+		<?php if(!empty($msg1)){
+			echo $msg1;
+		}?>
+	</strong>
+
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."required>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="usa">Pakistan</option>
+	  <option value="usa">India</option>
+	  <option value="usa">Europe</option>
+	  <option value="usa">UK</option>
+	  <option value="usa">Saudia Arabia</option>
+	  <option value="usa">Turkey</option>
+	  <option value="usa">Dubai</option>
+    </select>
+	<label for="plan">Plan</label>
+	<select id="Plan" name="Plan"required>
+		<option value="basic">Basic</option>
+		<option value="standard">Standard</option>
+		<option value="premium">Premium</option>
+    </select>
+	<label for="order">ORDER</label>
+	<select id="Plan" name="Plan"required>
+		<option value="basic">WEB DEVELOPMENT</option>
+		<option value="basic">APP DEVELOPMENT</option>
+		<option value="standard">CONTENT WRITTING</option>
+		<option value="standard">GHOST WRITTING</option>
+		<option value="standard">ARTICLE WRITTING</option>
+		<option value="standard">HISTORY WRITTING</option>
+		<option value="standard">E-BOOK WRITTING</option>
+		<option value="premium">AMAZON PRODUCT HAUNTING</option>
+    </select>
+	<label for="Delivery Time">Delivery Time</label>
+	<select id="Delivery" name="Delivery"required>
+		<option value="NORMAL">NORMAL</option>
+		<option value="URGENT">URGENT</option>
+		
+    </select>
+    <label for="msg">Message</label>
+    <textarea id="msg" name="msg" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input name="contact_btn" type="submit"  value="Submit">
+	<a href="https://mail.google.com/mail/u/0/#inbox?compose=new">mrajput11911@gmail.com</a>
+  </form>
+</div>
+
+</body>
+</html>
+
+	  <!-- <div class="col-25">
+		<div class="container">
+		  <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+		  <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+		  <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+		  <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+		  <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+		  <hr>
+		  <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+		</div>
+	  </div>
+	</div> -->
+	
+	</body>
+	</html>
+	
+	   <section>	
+		  <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        </section>			
+	</body>
+</html>
